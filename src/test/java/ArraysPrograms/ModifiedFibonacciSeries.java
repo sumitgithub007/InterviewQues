@@ -1,0 +1,24 @@
+package ArraysPrograms;
+
+public class ModifiedFibonacciSeries {
+
+	public static void main(String[] args) {
+		
+		
+		
+		int n0 =0, n1 = 1, n2;          // Initialize variables
+        System.out.print(n0 +" " + n1 +" ");      // of the series
+
+        for(int i = 0; i < 18; i++) {    // Loop for the next 18 terms
+            n2 = n1 + n0;                // Next term is sum of previous two
+            System.out.print(n2 + " ");  // Print it out
+            n0 = n1;                     // First previous becomes 2nd previous
+            n1 = n2;                     // And current number becomes previous
+        }
+        System.out.println( );            // Terminate the line
+		
+	 
+		
+	}
+	
+}
