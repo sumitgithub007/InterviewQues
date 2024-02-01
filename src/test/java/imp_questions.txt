@@ -7,6 +7,8 @@
 //rotate string by 2
 //reverse first and last letter
 //two array are rotation
+//hashMap me se smallest and largest _ already uploaded in arrays section using streams
+
 //missing number
 //majority element
 //kaden's algorithm
@@ -18,3 +20,4 @@
 //all permutations of a string
 //prime_composite_numbers
 //print_All_factors
+//find the largest value from array ,ye try kar normal method se
