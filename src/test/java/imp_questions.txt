@@ -11,7 +11,7 @@
 //majority element
 //kaden's algorithm
 //factorial of very largeNo
-
+//minimum rotations required to get same string
 //lcm_hcf
 //add two binary number(Imp)
 //different ways to swap two numbers
