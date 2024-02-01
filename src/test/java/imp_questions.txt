@@ -1,0 +1,20 @@
+////Even numbers at even index and odd numbers at odd index
+//two string anagram
+//permutations
+//reverse each individual string
+//kadens algo
+//rotate array by one
+//rotate string by 2
+//reverse first and last letter
+//two array are rotation
+//missing number
+//majority element
+//kaden's algorithm
+//factorial of very largeNo
+
+//lcm_hcf
+//add two binary number(Imp)
+//different ways to swap two numbers
+//all permutations of a string
+//prime_composite_numbers
+//print_All_factors
