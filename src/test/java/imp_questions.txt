@@ -8,7 +8,11 @@
 //reverse first and last letter
 //two array are rotation
 //hashMap me se smallest and largest _ already uploaded in arrays section using streams
-
+// add two numbers without using + operator , also do for multiply ,divide
+// different ways to swap a number
+// add two binary numbers (most Imp)
+//Fibonacci
+//LCM_HCF wala
 //missing number
 //majority element
 //kaden's algorithm
