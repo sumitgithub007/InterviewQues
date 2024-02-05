@@ -1,3 +1,4 @@
+//alternate small and capital letters in a string // striver wala chal jyga isme 
 ////Even numbers at even index and odd numbers at odd index
 //two string anagram
 //permutations
