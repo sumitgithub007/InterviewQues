@@ -5,7 +5,7 @@
 //kadens algo
 //rotate array by one
 //rotate string by 2
-//reverse first and last letter
+//reverse first and last letter ya fir reverse last and first digit of a number(youtube se miljyga)
 //two array are rotation of each other
 // array final value once its rotated k time ,means just print value not rotate
 //array rotation by d positions
