@@ -6,7 +6,9 @@
 //rotate array by one
 //rotate string by 2
 //reverse first and last letter
-//two array are rotation
+//two array are rotation of each other
+// array final value once its rotated k time ,means just print value not rotate
+//array rotation by d positions
 
 https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_source=share&utm_medium=member_desktop
 
