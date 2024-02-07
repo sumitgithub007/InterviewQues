@@ -1,5 +1,6 @@
 //NEW ONE
->> Print all possible substring of a string
+1 ) Split a String into a Number of Substrings in Java
+
 
 
 
