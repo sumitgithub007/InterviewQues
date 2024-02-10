@@ -1,7 +1,21 @@
 //NEW ONE
 1 ) Split a String into a Number of Substrings in Java
+2) Determine a number is even or odd without using modulus operator , _ ,+,*,divide 
 
+public class Main {
+    public static void main(String[] args) {
+        int number = Integer.parseInt(args[0]); // Get the number from command line argument
+        if (isEven(number)) {
+            System.out.println("The number is even.");
+        } else {
+            System.out.println("The number is odd.");
+        }
+    }
 
+    public static boolean isEven(int num) {
+        return ((num & 1) == 0);
+    }
+}
 
 
 
