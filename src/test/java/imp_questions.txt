@@ -1,6 +1,7 @@
 //NEW ONE
 1 ) Split a String into a Number of Substrings in Java
 2) Determine a number is even or odd without using modulus operator , _ ,+,*,divide 
+3) Kth largest and smallest element in an array
 
 
 
