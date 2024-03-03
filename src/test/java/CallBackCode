@@ -71,7 +71,31 @@ function bookTicket()
 //ya fir A().then(B).then(C).then(D).then(E);
 //https://www.youtube.com/watch?v=c-0P67cxTbI
 //coder's gyan channel tha
- 
+
+
+
+async function run()
+// {
+//     const data1 = await A();
+//     console.log(data1);
+//     const data2 = await B();
+//     console.log(data2);
+//     const data3 = await C();
+//     console.log(data3);
+//     const data4 =  await D();
+//     console.log(data4);
+//     const data5 =  await E();
+//     console.log(data5);
+// } 
+
+
+//  run();
+
+
+
+
+
+
 A().then((data)=>{
 
     console.log(data);
