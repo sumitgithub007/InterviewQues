@@ -1,0 +1,92 @@
+
+function A(callback)
+{
+    
+   return new Promise((resolve,reject)=>{
+      setTimeout(() => {
+        console.log("a");
+        resolve("A");
+      }, 2000);   
+    })
+    
+}
+
+function B(callback)
+{
+    return new Promise((resolve,reject)=>{
+
+        setTimeout(() => {
+            console.log("b");
+            resolve("B");
+           
+          }, 1500);  
+
+    }) 
+}
+
+function C(callback)
+{
+   return new Promise((resolve,rejec)=>{
+
+     setTimeout(() => {
+        console.log("c");
+        resolve("C");
+         
+      }, 1000);   
+
+   })
+}
+
+function D(callback)
+{
+   return new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        console.log("d");
+        resolve("D");
+        
+      }, 500);   
+   })
+}
+
+function E()
+{
+    return new Promise((resolve,reject)=>{
+
+         setTimeout(() => {
+            console.log("e");
+           resolve("E");
+           
+          }, 200); 
+
+    })  
+}
+
+
+function bookTicket()
+{
+    console.log("Booking ticket")
+    
+}
+
+//ya fir A().then(B).then(C).then(D).then(E);
+//https://www.youtube.com/watch?v=c-0P67cxTbI
+//coder's gyan channel tha
+ 
+A().then((data)=>{
+
+    console.log(data);
+    B().then((data2)=>{
+        console.log(data2);
+        C().then((data3)=>{
+            console.log(data3);
+            D().then((data4)=>{
+                console.log(data4)
+                E();
+            })
+        })
+    })
+})
+
+ 
+
+bookTicket();
