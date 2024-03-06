@@ -43,6 +43,14 @@ public class Main {
 //recursion factorial 
 //recursion permmutations
 //recursion reverse a number
+public int reverse(int num) {
+    // Base case: if the number is single digit or 0, return the number itself
+    if (num < 10 && num >= 0) {
+        return num;
+    }
+    // Recursively reverse the number
+    return reverse(num / 10) * 10 + num % 10;
+}
 
 https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_source=share&utm_medium=member_desktop
 
