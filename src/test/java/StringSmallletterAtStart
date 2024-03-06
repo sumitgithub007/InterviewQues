@@ -1,0 +1,72 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class Test1
+{
+
+    public void rearrange(char nums[])
+    {
+        List<Character> cap = new ArrayList<>();
+        List<Character> small = new ArrayList<>();
+
+        for(int i=0;i<nums.length;++i)
+        {
+            if(nums[i]>=65 && nums[i]<=90)
+            cap.add(nums[i]);
+
+            else
+            small.add(nums[i]);
+        }
+
+         
+           int index =-1;
+            for(int i=0;i<small.size();++i)
+            {
+                ++index;
+                nums[i]=small.get(i);
+            }
+
+            
+            index=index+1;
+            for(int i=0;i<cap.size();++i)
+            {
+                nums[index]=cap.get(i);
+               ++index;
+            }
+
+
+       
+        
+ 
+
+
+
+
+
+
+    }   
+    
+
+    public void display(char nums[])
+    {
+        
+            System.out.print(String.valueOf(nums));
+        
+    }
+
+    public static void main(String[] args) {
+        
+        Test1 test = new Test1();
+       String s  = "ABCDEabcdeZXSfgh";
+       char[]c = s.toCharArray();
+
+        test.rearrange(c);
+        test.display(c);
+
+
+
+
+    }
+
+
+}
