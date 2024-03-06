@@ -39,6 +39,10 @@ public class Main {
 //two array are rotation of each other
 // array final value once its rotated k time ,means just print value not rotate
 //array rotation by d positions
+//recursion print fibonacci 
+//recursion factorial 
+//recursion permmutations
+//recursion reverse a number
 
 https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_source=share&utm_medium=member_desktop
 
