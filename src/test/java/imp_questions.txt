@@ -63,6 +63,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 //Fibonacci
 //add two complex numbers  2+3i
 //LCM_HCF wala
+//Given a string rotate it to left or right by d places ,array oncept use
 //missing number
 //majority element
 //kaden's algorithm
