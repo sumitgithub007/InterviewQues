@@ -3,7 +3,7 @@
 2) Determine a number is even or odd without using modulus operator , _ ,+,*,divide 
 3) Kth largest and smallest element in an array
 4) Longest common subsequence in array
-
+5) Roman To Integers
 
 public class Main {
     public static void main(String[] args) {
