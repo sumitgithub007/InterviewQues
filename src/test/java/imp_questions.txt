@@ -29,7 +29,8 @@ public class Main {
 ////Even numbers at even index and odd numbers at odd index
 //two string anagram
 //permutations
-//reverse each individual string
+// union intersection of teo sorted arrays //phle sort kalro O(n logn) then do good hai
+//reverse each individual word string stack use kar 
 //kadens algo
 //rotate array by one
 //rotate string by 2
