@@ -1,0 +1,15 @@
+
+           int index =-1;
+            for(int i=0;i<neg.size();++i)
+            {
+                ++index;
+                nums[i]=neg.get(i);
+            }
+
+            
+            index=index+1;
+            for(int i=0;i<pos.size();++i)
+            {
+                nums[index]=pos.get(i);
+               ++index;
+            }
