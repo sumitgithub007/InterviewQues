@@ -1,0 +1,53 @@
+package testt;
+import java.util.*;
+class Solution {
+
+    static void kth_Largest_MaxHeap(int[] nums, int k) {
+
+    	PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+      
+ 
+ 
+        for (int i = 0; i < nums.length; i++) {
+            pq.add(nums[i])  ;
+        }
+ 
+        int f = k - 1 ;
+        
+
+        while (f > 0) {
+        	  
+            pq.remove()  ;
+            f-- ;
+        }
+
+        System.out.println("Kth Largest element "+pq.peek())  ;
+    }
+
+    static void kth_Smallest_MinHeap(int[] nums, int k) {
+
+        PriorityQueue<Integer>pq= new PriorityQueue<>();
+        int n = nums.length  ;
+
+        for (int i = 0; i < n; i++) {
+            pq.add(nums[i])  ;
+        }
+
+        int f = k - 1 ;
+
+        while (f > 0) {
+            pq.remove()  ;
+            f-- ;
+        }
+
+        System.out.println("Kth Smallest element "+pq.peek())  ;
+    }
+ 
+public static void main(String args[]) {
+ 
+    int nums[] = {1,8,4,2,6,22,9,224,229,45,23,47,88,99}  ;
+    //          229 224 99 88 47 45 23 22 9 8 6 4 2 1 
+    kth_Largest_MaxHeap(nums, 14)  ;
+    kth_Smallest_MinHeap(nums, 11)  ;
+}
+}
