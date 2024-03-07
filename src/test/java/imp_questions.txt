@@ -31,6 +31,7 @@ public class Main {
 //permutations
 // union intersection of teo sorted arrays //phle sort kalro O(n logn) then do good hai
 //reverse each individual word string stack use kar 
+//Make first letter captital for a given String : Sumit Goyal Is A Good Boy
 //kadens algo
 //rotate array by one
 //rotate string by 2
