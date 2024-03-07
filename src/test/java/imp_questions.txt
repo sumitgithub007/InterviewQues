@@ -68,6 +68,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 //majority element
 //kaden's algorithm
 //factorial of very largeNo
+//maximum consecutive 1's in array striver
 //minimum rotations required to get same string
 //lcm_hcf
 //add two binary number(Imp)
