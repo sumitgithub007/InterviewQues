@@ -30,8 +30,10 @@ public class Main {
 //two string anagram
 //permutations
 // union intersection of teo sorted arrays //phle sort kalro O(n logn) then do good hai
-//reverse each individual word string stack use kar 
+//reverse each individual word string stack use kar  : https://www.geeksforgeeks.org/reverse-individual-words/
+//Given a string Sumit Goyal Is A Good Boy  sort each word in ascending or descending order good question
 //Make first letter captital for a given String : Sumit Goyal Is A Good Boy
+
 //kadens algo
 //rotate array by one
 //rotate string by 2
