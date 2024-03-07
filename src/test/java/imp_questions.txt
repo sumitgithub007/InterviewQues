@@ -4,6 +4,7 @@
 3) Kth largest and smallest element in an array
 4) Longest common subsequence in array
 5) Roman To Integers
+6) How to reverse a negative number already did twice ,use ,bhar txt file me code dia ha
 
 public class Main {
     public static void main(String[] args) {
