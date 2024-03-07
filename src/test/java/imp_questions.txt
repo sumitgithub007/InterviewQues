@@ -32,6 +32,8 @@ public class Main {
 // union intersection of teo sorted arrays //phle sort kalro O(n logn) then do good hai
 //reverse each individual word string stack use kar  : https://www.geeksforgeeks.org/reverse-individual-words/
 //Given a string Sumit Goyal Is A Good Boy  sort each word in ascending or descending order good question
+// Reverse a string preserving positions
+//Reverse a string without affecting special characters
 //Make first letter captital for a given String : Sumit Goyal Is A Good Boy
 
 //kadens algo
