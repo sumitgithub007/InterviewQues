@@ -1,4 +1,4 @@
-//NEW ONE
+in//NEW ONE
 1 ) Split a String into a Number of Substrings in Java
 2) Determine a number is even or odd without using modulus operator , _ ,+,*,divide 
 3) Kth largest and smallest element in an array
@@ -90,4 +90,4 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 2) DB connection ratt lo
 3) Check element presence  rahul arora
 4) which design patterns you used : pageObject and singleton Pattern
-5) 
+5) ThreadLocal use dekh ke karna ho agar
