@@ -5,6 +5,15 @@ in//NEW ONE
 4) Longest common subsequence in array
 5) Roman To Integers
 5) Singleton class do selenium way important
+5). Given a #string with lower case, upper case and special characters, the resultant string should have the count of #character with each character separately.
+
+Example: aaaAAab^B&bbc$cC%ca*aDdDd@bB
+
+output: a6b4c4a2d4b2
+
+These questions can be asked too, just like aabbc, a2b2c1, however, what I have mentioned is the latest #interview question.
+
+
 6) How to reverse a negative number already did twice ,use ,bhar txt file me code dia ha
 
 public class Main {
