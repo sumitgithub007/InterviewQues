@@ -4,6 +4,7 @@
 3) Kth largest and smallest element in an array
 4) Longest common subsequence in array
 5) Roman To Integers
+5) Singleton class do selenium way important
 6) How to reverse a negative number already did twice ,use ,bhar txt file me code dia ha
 
 public class Main {
@@ -84,3 +85,9 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 //prime_composite_numbers
 //print_All_factors
 //find the largest value from array ,ye try kar normal method se
+//selenium Interview
+1) Broken links find
+2) DB connection ratt lo
+3) Check element presence  rahul arora
+4) which design patterns you used : pageObject and singleton Pattern
+5) 
