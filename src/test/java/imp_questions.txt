@@ -78,6 +78,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 // different ways to swap a number
 // add two binary numbers (most Imp)
 //Fibonacci
+// mere two arrays in java
 //add two complex numbers  2+3i
 //LCM_HCF wala
 //Given a string rotate it to left or right by d places ,array oncept use
@@ -94,6 +95,10 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 //prime_composite_numbers
 //print_All_factors
 //find the largest value from array ,ye try kar normal method se
+
+
+
+
 //selenium Interview
 1) Broken links find
 2) DB connection ratt lo
