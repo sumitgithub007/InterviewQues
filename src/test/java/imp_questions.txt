@@ -105,3 +105,8 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 3) Check element presence  rahul arora
 4) which design patterns you used : pageObject and singleton Pattern
 5) ThreadLocal use dekh ke karna ho agar
+
+
+// API Automation 
+1) What is OAuth 2.0 mechanism ? 1.0 vs 2.0
+2) Various http status codes dekh le
