@@ -95,6 +95,8 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 //prime_composite_numbers
 //print_All_factors
 //find the largest value from array ,ye try kar normal method se
+//Find leaders in array
+//Find repeating and missing number(striver DSA)
 
 
 
