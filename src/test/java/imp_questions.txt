@@ -99,7 +99,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 //Find repeating and missing number(striver DSA)
 //Majority element n/2 striver karlia using HashMap
 // Find element that appears once in an array while  every other element appears twice
-
+// swap two strings ,naveen automation important
 
 
 //selenium Interview
