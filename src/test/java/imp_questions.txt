@@ -100,6 +100,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 //Majority element n/2 striver karlia using HashMap
 // Find element that appears once in an array while  every other element appears twice
 // swap two strings ,naveen automation important
+// Important : Rearrange an array in order smallest,largest ,second_smallest,second_largest amd so on...
 
 
 //selenium Interview
