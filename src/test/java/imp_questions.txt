@@ -109,6 +109,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 3) Check element presence  rahul arora
 4) which design patterns you used : pageObject and singleton Pattern
 5) ThreadLocal use dekh ke karna ho agar
+6) xpath me . lagate hai parent child relatiomship 
 
 
 // API Automation 
