@@ -10,6 +10,8 @@ public class GFG
 	// position and so on. 
 	static void rearrange(int[] arr, int n) 
 	{ 
+
+		Arrays.sort(arr);
 		// Auxiliary array to hold modified array 
 		int temp[] = arr.clone(); 
 
