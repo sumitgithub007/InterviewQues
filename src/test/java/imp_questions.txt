@@ -104,6 +104,8 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 // Important : Rearrange an array in order smallest,largest ,second_smallest,second_largest amd so on...
 // Move even numbers to left and odd to right preserving position or simple both tarike
 // move all 0 to left and all 1 to right
+// Appears once in array wala
+//insertion,deletion array
 
 
 //selenium Interview
