@@ -123,5 +123,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 
 // MY SQL
 1) make a duplicate table from already existing table
+CREATE TABLE new_table AS SELECT * FROM original_table;
+
 
 
