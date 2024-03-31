@@ -1,0 +1,53 @@
+package Test.ExcelReading;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class Test1 {
+
+	public static void main(String[] args) throws IOException {
+		
+		FileInputStream fis = new FileInputStream("C:\\Users\\Sumit Goyal\\Desktop\\Data.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		XSSFSheet sheet = workbook.getSheet("sheet2");
+		
+		int rows = sheet.getLastRowNum();
+		//System.out.println(rows);
+		
+		
+		 
+		
+		 Iterator<Row> r = sheet.rowIterator();
+		 r.next();
+		while(r.hasNext())
+		{
+			  Row f =r.next();
+			  Iterator<Cell> a = f.cellIterator();
+			  while(a.hasNext())
+			  {
+				  Cell c = a.next();
+				   
+				 if(c.getCellType().equals(CellType.STRING))
+				  System.out.print(c.getStringCellValue()+" ");
+				 
+				 else
+					 if(!(c.getNumericCellValue()==0.0))
+					 System.out.print(c.getNumericCellValue()+" ");
+				  
+				  
+			  }
+			  System.out.println();
+					  
+		}
+		
+		
+		
+	}
+}
