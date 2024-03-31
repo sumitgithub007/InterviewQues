@@ -6,7 +6,6 @@ in//NEW ONE
 5) Roman To Integers
 5) Singleton class do selenium way important
 5). Given a #string with lower case, upper case and special characters, the resultant string should have the count of #character with each character separately.
-6) Given a string sumit is a good boy ,print largest length element from string,if multiple print first
 
 
 Example: aaaAAab^B&bbc$cC%ca*aDdDd@bB
@@ -107,6 +106,37 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 // move all 0 to left and all 1 to right
 // Appears once in array wala
 //insertion,deletion array
+
+// Given a string sumit is a good boy ,print largest length element from string,if multiple print first
+String s = "sumit sum123456 a good boy123456";
+        String element = "";
+        String[]arr = s.split(" ");
+        int largest = arr[0].length();
+        for(int i=1;i<arr.length;++i)
+        {
+            if(largest<=arr[i].length())
+            {
+                largest = arr[i].length();
+                element=arr[i];
+            }
+        }
+        System.out.print(largest);
+        System.out.print(element);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //selenium Interview
