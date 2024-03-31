@@ -106,6 +106,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 // move all 0 to left and all 1 to right
 // Appears once in array wala
 //insertion,deletion array
+//How to use Collections.reverseOrder() on IntegerArray,(sort array in descending order in short)
 
 // Given a string sumit is a good boy ,print largest length element from string,if multiple print first
 String s = "sumit sum123456 a good boy123456";
