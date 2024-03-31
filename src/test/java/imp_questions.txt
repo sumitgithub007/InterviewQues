@@ -125,20 +125,6 @@ String s = "sumit sum123456 a good boy123456";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //selenium Interview
 1) Broken links find
 2) DB connection ratt lo
