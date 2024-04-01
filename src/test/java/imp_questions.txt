@@ -109,6 +109,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 //insertion,deletion array
 //print 1 to 100 without loop
 //print your name 100 times without using any numbers
+//Print your name 1000 times without using any loop in Java
 //How to use Collections.reverseOrder() on IntegerArray,(sort array in descending order in short)
 
 // Given a string sumit is a good boy ,print largest length element from string,if multiple print first
