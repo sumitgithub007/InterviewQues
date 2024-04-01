@@ -1,0 +1,50 @@
+package Test.ExcelReading;
+
+import java.util.Arrays;
+
+//Java program to find if any element appears
+//more than n/3.
+class GFG {
+	
+	public static  void print(int start,int end)
+	{
+		
+		if(start==end+1)
+			return;
+		else
+		{
+			System.out.println(start++);
+			 
+			print(start,end);
+		}
+	}
+	 
+	
+ public static void main(String[] args) {
+	
+	 print(1,100);
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+         
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+//This code is contributed by Arnab Kundu
