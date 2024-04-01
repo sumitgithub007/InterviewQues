@@ -107,6 +107,8 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 // Appears once in array wala
 //Given an array of integers, sort the first half of the array in ascending order and second half in descending order.
 //insertion,deletion array
+//print 1 to 100 without loop
+//print your name 100 times without using any numbers
 //How to use Collections.reverseOrder() on IntegerArray,(sort array in descending order in short)
 
 // Given a string sumit is a good boy ,print largest length element from string,if multiple print first
@@ -131,7 +133,7 @@ String s = "sumit sum123456 a good boy123456";
 1) Broken links find , also how we can test in parallel using parallelstream important naveen channel me video ha
 2) DB connection ratt lo
 3) Check element presence  rahul arora
-4) which design patterns you used : pageObject and singleton Pattern
+4) which design patterns you used : pageObject and singleton Pattern  : Testing world channel se kar singleton pattern
 5) ThreadLocal use dekh ke karna ho agar
 6) xpath me . lagate hai parent child relatiomship 
 7) Read data from excel code yaad kar
