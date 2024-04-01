@@ -105,6 +105,7 @@ https://www.linkedin.com/feed/update/urn:li:activity:7159232080365723648?utm_sou
 // Move even numbers to left and odd to right preserving position or simple both tarike
 // move all 0 to left and all 1 to right
 // Appears once in array wala
+//Given an array of integers, sort the first half of the array in ascending order and second half in descending order.
 //insertion,deletion array
 //How to use Collections.reverseOrder() on IntegerArray,(sort array in descending order in short)
 
