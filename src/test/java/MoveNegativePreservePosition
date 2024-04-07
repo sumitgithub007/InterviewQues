@@ -1,15 +1,45 @@
-
-           int index =-1;
-            for(int i=0;i<neg.size();++i)
-            {
-                ++index;
-                nums[i]=neg.get(i);
-            }
-
-            
-            index=index+1;
-            for(int i=0;i<pos.size();++i)
-            {
-                nums[index]=pos.get(i);
-               ++index;
-            }
+package TestPackage;
+// Java program to rearrange an array in minimum 
+// maximum form 
+// Java program to check if two strings are isomorphic
+import java.io.*;
+import java.util.*;
+class Isomorphic {
+	 
+ 
+	  public static void rearrange(int arr[])
+	  {
+		  List<Integer> pos = new ArrayList<Integer>();
+		  List<Integer> neg = new ArrayList<Integer>();
+		 
+		  for(int i=0;i<arr.length;++i)
+		  {
+			  if(arr[i]>0)
+				  pos.add(arr[i]);
+			  else
+				  neg.add(arr[i]);
+		  }
+		  
+		  int counter=0;
+		  for(int i=0;i<pos.size();++i)
+		  {
+			  arr[i]=pos.get(i);
+			  ++counter;
+		  }
+		  
+		  for(int i=0;i<neg.size();++i)
+		  {
+			  arr[counter]=neg.get(i);
+			  ++counter;
+		  }
+		  System.out.println(Arrays.toString(arr));
+	  }
+ 	
+	 
+	
+	public static void main(String[] args)
+	{
+		 int arr[]=new int[] {1,-2,3,-5,-6,7,-8,9,-89,9};
+		 rearrange(arr);
+	}
+}
