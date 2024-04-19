@@ -51,6 +51,15 @@ String myString1 = "__1_6____3__6_345____0";
           System.out.println(newString);
          // __x_x____x__x_x____x
 
+***** ye dekh important ******
+
+String url = "13,456.98";
+        String k = url.replaceAll("\\.", "");
+        System.out.println(k);
+        
+        String url2 = "1345,6.98";
+        String k2 = url2.replaceAll(".", "");
+        System.out.println(k2);//will print empty string
 
 
 
