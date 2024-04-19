@@ -1,19 +1,17 @@
-in//NEW ONE
+//NEW ONE
 1 ) Split a String into a Number of Substrings in Java
 2) Determine a number is even or odd without using modulus operator , _ ,+,*,divide 
 3) Kth largest and smallest element in an array
 4) Longest common subsequence in array
 5) Roman To Integers
-5) Singleton class(Testing world_Naveen) do selenium way important
-5). Given a #string with lower case, upper case and special characters, the resultant string should have the count of #character with each character separately.
-
+6) Singleton class(Testing world_Naveen) do selenium way important
+7). Given a #string with lower case, upper case and special characters, the resultant string should have the count of #character with each character separately.
 
 Example: aaaAAab^B&bbc$cC%ca*aDdDd@bB
 
 output: a6b4c4a2d4b2
 
-These questions can be asked too, just like aabbc, a2b2c1, however, what I have mentioned is the latest #interview question.
-
+>> These questions can be asked too, just like aabbc, a2b2c1, however, what I have mentioned is the latest #interview question.
 
 //output: a6b4c4a2d4b2
         String s1 = "a2b3c4j8z2";
@@ -62,7 +60,7 @@ String url = "13,456.98";
         System.out.println(k2);//will print empty string
 
 
-
+5) Multithreading ki starting ki 6 videos karlo enough hai more than basic idea hona chye
 
 6) How to reverse a negative number already did twice ,use ,bhar txt file me code dia ha
 
