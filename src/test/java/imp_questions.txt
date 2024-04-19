@@ -1,3 +1,8 @@
+//OLD QUES
+1) LCM,HCF
+2) DECIMAL TO BINARY ,BINARY TO DECIMAL 
+3) Find all factors of a number,prime ,composite
+
 //NEW ONE
 1 ) Split a String into a Number of Substrings in Java
 2) Determine a number is even or odd without using modulus operator , _ ,+,*,divide 
