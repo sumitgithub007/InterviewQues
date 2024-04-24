@@ -212,7 +212,7 @@ String s = "sumit sum123456 a good boy123456";
                   public abstract class By extends Object
                   Mechanism used to locate elements within a document
 13) How System.out.println() works internally ? 
-14)What is fluent wait ?
+14) Wait for the file download using fluent wait ? 
 15) What is pageLoadTimeout ?
 16) Write screenshot code for selenium ?
    	  driver.get("https://www.google.com");
