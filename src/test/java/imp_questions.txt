@@ -208,6 +208,14 @@ String s = "sumit sum123456 a good boy123456";
 14)What is fluent wait ?
 15) What is pageLoadTimeout ?
 16) Write screenshot code for selenium ?
+17) Explicit wait Polling : //div[@id='finfish']/h4 (tried for 12 second(s) with 500 milliseconds interval) 
+18) The default time for Implicit wait is zero and it keeps polling 
+    for the required element after every 500 milliseconds.
+19) Fluent wait se we can wait for file download naveen automation and we can change polling frequency
+    which we cannot do with implicit & explicit wait there polling frequency was by default 500ms
+
+
+
 
 // API Automation 
 1) What is OAuth 2.0 mechanism ? 1.0 vs 2.0
