@@ -198,6 +198,13 @@ String s = "sumit sum123456 a good boy123456";
 6) xpath me . lagate hai parent child relatiomship 
 7) Read data from excel code yaad kar
 8) Click using JavascriptExecutor
+             WebElement box = driver.findElement(By.xpath("(//textarea)[1]"));
+             JavascriptExecutor js = ((JavascriptExecutor)driver);
+	    String text = "Apple";
+	    js.executeScript("arguments[0].value='"+text+"'", box);
+	    WebElement googleSearch = driver.findElement(By.xpath("(//input[@value='Google Search'])[2]"));
+	    js.executeScript("arguments[0].click()", googleSearch);
+
 9) Type into textbox using JavaScriptExecutor
 10) isEnabled(),isDisplayed(),isSelected() 
 11) How to check element exists on webpage using try catch and driver.findElements();
