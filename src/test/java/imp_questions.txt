@@ -197,6 +197,17 @@ String s = "sumit sum123456 a good boy123456";
 5) ThreadLocal use dekh ke karna ho agar
 6) xpath me . lagate hai parent child relatiomship 
 7) Read data from excel code yaad kar
+8) Click using JavascriptExecutor
+9) Type into textbox using JavaScriptExecutor
+10) isEnabled(),isDisplayed(),isSelected() 
+11) How to check element exists on webpage using try catch and driver.findElements();
+12 What is By in selenium 
+                  public abstract class By extends Object
+                  Mechanism used to locate elements within a document
+13) How System.out.println() works internally ? 
+14)What is fluent wait ?
+15) What is pageLoadTimeout ?
+16) Write screenshot code for selenium ?
 
 // API Automation 
 1) What is OAuth 2.0 mechanism ? 1.0 vs 2.0
