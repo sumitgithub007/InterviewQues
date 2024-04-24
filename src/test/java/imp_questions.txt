@@ -215,6 +215,16 @@ String s = "sumit sum123456 a good boy123456";
 14)What is fluent wait ?
 15) What is pageLoadTimeout ?
 16) Write screenshot code for selenium ?
+   	  driver.get("https://www.google.com");
+	  File f =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //page
+	  WebElement ele = driver.findElement(By.xpath("(//input[@value='Google Search'])[2]"));
+	  File f =  ele.getScreenshotAs(OutputType.FILE); //single element
+	  String p  =System.getProperty("user.dir");
+	  File f1 = new File(p+"\\index2.png");
+	  FileUtils.copyFile(f, f1);
+		  
+
+   
 17) Explicit wait Polling : //div[@id='finfish']/h4 (tried for 12 second(s) with 500 milliseconds interval) 
 18) The default time for Implicit wait is zero and it keeps polling 
     for the required element after every 500 milliseconds.
