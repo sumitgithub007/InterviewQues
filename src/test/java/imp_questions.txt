@@ -238,8 +238,10 @@ String s = "sumit sum123456 a good boy123456";
 21) scroll down/up using selenium 
 22)  zoom in and zoom out on chrome in selenium
 23)  Disable css and images for faster execution in selenium
-24 ) Download File using Fluent wait
+24) Download File using Fluent wait
 25) Perform Ctrl+c and Ctrl+v using selenium
+26) Type something in capital letters in textbox using Actions class
+27) Double click(Context Click in selenium)
 
 // API Automation 
 1) What is OAuth 2.0 mechanism ? 1.0 vs 2.0
