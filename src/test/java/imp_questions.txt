@@ -261,7 +261,7 @@ String s = "sumit sum123456 a good boy123456";
 28) enabled=True ,invocationCount =10 , types of annotation in testNg , IRetryAnalyzer,ItestListner
 29 ) Types of Exceptions in selenium : StaleElement,NullPointer,ElementClickIntercepted,ElementNotInteractable,
 invalidXpath selector,unable to locate element,timeout exception,FileNotFoundException
-
+30) scroll inside a webElement : use EventFiringWebDriver
 
 
 
