@@ -239,9 +239,45 @@ String s = "sumit sum123456 a good boy123456";
 22)  zoom in and zoom out on chrome in selenium
 23)  Disable css and images for faster execution in selenium
 24) Download File using Fluent wait
-25) Perform Ctrl+c and Ctrl+v using selenium
-26) Type something in capital letters in textbox using Actions class
-27) Double click(Context Click in selenium)
+25) Type something in capital letters in textbox using Actions class
+26) Double click(Context Click in selenium)
+27) Perform Ctrl+c and Ctrl+v using selenium
+
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://register.rediff.com/register/register.php?FormName=user_details");
+		 Actions actions = new Actions(driver);
+		WebElement ele =driver.findElement(By.xpath("//input[@type='text']"));
+		ele.sendKeys("hellosumit");		
+		String key1 = Keys.chord(Keys.CONTROL,"a");
+		String key2 = Keys.chord(Keys.CONTROL,"x"); // or use "c"
+		String key3 = Keys.chord(Keys.CONTROL,"v");
+		//ele.sendKeys(key1);
+		ele.click();
+		ele.sendKeys(key1);
+		ele.sendKeys(key2);
+		WebElement ele2 = driver.findElement(By.xpath("(//input[@type='text'])[2]"));
+		ele2.sendKeys(key3); 
+		
+28) enabled=True ,invocationCount =10 , types of annotation in testNg , IRetryAnalyzer,ItestListner
+29 ) Types of Exceptions in selenium : StaleElement,NullPointer,ElementClickIntercepted,ElementNotInteractable,
+invalidXpath selector,unable to locate element,timeout exception,FileNotFoundException
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // API Automation 
 1) What is OAuth 2.0 mechanism ? 1.0 vs 2.0
