@@ -21,6 +21,43 @@ public class testnew {
 		options.setExperimentalOption("prefs", prefs);
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.myntra.com");
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	     // Create a new instance of FirefoxOptions
+        FirefoxOptions options = new FirefoxOptions();
+        
+        // Create a new Firefox profile
+        FirefoxProfile profile = new FirefoxProfile();
+        
+        // Set preferences to disable images
+        profile.setPreference("permissions.default.image", 2);
+        
+        // Assign the created profile to FirefoxOptions
+        options.setProfile(profile);
+        
+        // Instantiate FirefoxDriver with options
+        WebDriver driver = new FirefoxDriver(options);
+        
+        // Navigate to a website to test
+        driver.get("https://myntra.com");
+        
+        // Rest of your Selenium code here
+
+
+
+ In the code snippet provided, the value `2` represents the preference setting for image loading behavior in Firefox profiles. Specifically, in this case:
+
+- `0`: This value allows all images to load.
+- `1`: This value blocks all images from loading.
+- `2`: This value prompts Firefox to ask the user whether to load images or not.
+
+So, setting `"permissions.default.image"` to `2` means that Firefox will prompt the user whether they want to load images on each page. Since Selenium operates in an automated environment, this setting effectively blocks images because there's no user to interact with the prompt. Therefore, it has the same effect as setting it to `1`, blocking all images.
+
+
+
+
+
+
+
 	
 	}
 	
