@@ -37,8 +37,25 @@ output: a6b4c4a2d4b2
             
             System.out.println(output.toString()); // Output: aabbbccccjjjjjjjjjjjzz
         }
+***Print only 3 digit number ,2 digit number from string or both
 
-          
+
+          String inputString = "32a2b38c4p14777z675m988pp66p34";
+
+            // Regular expression to match only two-digit numbers
+            String regex =  "(?<!\\d)\\d{3}(?!\\d)";
+
+            // Compile the regular expression pattern
+            Pattern pattern = Pattern.compile(regex);
+
+            // Create a Matcher object to find matches in the input string
+            Matcher matcher = pattern.matcher(inputString);
+
+            // Iterate through the matches and print them
+            System.out.println("Two-digit numbers found:");
+            while (matcher.find()) {
+                System.out.println(matcher.group());
+            }
 
 ####******** \\d vs \\d+ *******##### try with \\s vs \\s+
 
