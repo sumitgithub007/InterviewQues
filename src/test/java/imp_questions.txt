@@ -212,6 +212,7 @@ String s = "sumit sum123456 a good boy123456";
 
 
 //selenium Interview
+** Handle authentication popup herokuapp kaise hga ? **
 1) Broken links find , also how we can test in parallel using parallelstream important naveen channel me video ha
 2) DB connection ratt lo
 3) Check element presence  rahul arora
