@@ -111,7 +111,7 @@ public class Main {
 4) selenium broken links ,database connection code ratt lo ****
 5) Naveen Automation se interview Questions kar
 
-
+// count pair with given sum  important
 //alternate small and capital letters in a string // striver wala chal jyga isme 
 //print small letter at start and capital at end //striver chal jyga baki dusra bhi chaljyga 
 ////Even numbers at even index and odd numbers at odd index
