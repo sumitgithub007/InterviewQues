@@ -1,3 +1,4 @@
+// Quick sort ,bubble sort ,merge sort which is best ye puchte hai
 //OLD QUES
 1) LCM,HCF
 2) DECIMAL TO BINARY ,BINARY TO DECIMAL 
