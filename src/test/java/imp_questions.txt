@@ -1,3 +1,5 @@
+//String s = "I am java developer I am proud of it" -> isme if(arr[j].equals(arr[i]) ayega kuki strin ha ,
+character me ascii compare hjyga no issue but string me .equals()
 // Quick sort ,bubble sort ,merge sort which is best ye puchte hai
 //OLD QUES
 1) LCM,HCF
