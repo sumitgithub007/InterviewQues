@@ -1,0 +1,152 @@
+package steps;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AddToCart2 {
+
+    public static WebDriver driver;
+    
+    AddToCart2(WebDriver driver)
+    {
+        this.driver=driver;
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get("https://www.myntra.com/hair-conditioner");
+    }
+    
+//    public static void printAllProdcts()
+//    {
+//        List<String> alist = new ArrayList<String>();
+//        By all_data = By.xpath("//h3[contains(text(),\"\")]");
+//        List<WebElement> ele =driver.findElements(all_data);
+//        int total_items = ele.size();
+//        System.out.println("total_items ="+total_items);
+//        for(WebElement element : ele)
+//        {
+//            String price = element.findElement(By.xpath("./../div[@class='product-price']")).getText();
+//            price=price.replaceAll("\\s+","");
+//            price=price.replaceAll("\\.","");
+//
+//            String data=price.split("Rs")[1];
+//              alist.add(element.getText()+"="+"Rs."+data);
+//             
+//
+//        }
+//        Collections.sort(alist);
+//
+//        System.out.println(alist);
+//
+//    }
+    
+    public static void printAllProdcts_sameProductOneAfterOther()
+    {
+        List<String> alist = new ArrayList<String>();
+
+        By all_data = By.xpath("//h3[contains(text(),\"\")]");
+        List<WebElement> elem =driver.findElements(all_data);
+        int total_items = elem.size();
+        System.out.println("total_items ="+total_items);
+        for(WebElement element : elem)
+        {
+            if(alist.contains(element.getText().trim()))
+            {
+                continue;
+            }
+            String element_first = element.getText().trim();
+            alist.add(element_first);
+            By first_ele =  By.xpath("//h3[text()='"+element_first+"']");
+            
+          
+            
+            List<WebElement> ele =driver.findElements(first_ele);
+            
+            if(ele.size()==0)
+            {
+                System.out.println("No such element is there enter correct product name");
+                
+            }
+            
+            else {
+                
+                for(WebElement element2 : ele)
+                {
+                    String price = element2.findElement(By.xpath("./../div[@class='product-price']")).getText();
+                    price=price.replaceAll("\\s+","");
+                    price=price.replaceAll("\\.","");
+
+                    String data=price.split("Rs")[1];
+                    System.out.println(element_first+"="+"Rs."+data);
+                
+                }
+                System.out.println("------------------------------------------------");
+                
+            }
+            
+        }
+
+
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    public static void printSingleProduct(String enterProductName)
+    {
+        By xpath_exp = By.xpath("//h3[text()='"+enterProductName+"']");
+        
+        
+        List<WebElement> ele =driver.findElements(xpath_exp);
+        
+        if(ele.size()==0)
+        {
+            System.out.println("No such element is there enter correct product name");
+            
+        }
+        
+        else {
+            
+            for(WebElement element : ele)
+            {
+                String price = element.findElement(By.xpath("./../div[@class='product-price']")).getText();
+                price=price.replaceAll("\\s+","");
+                price=price.replaceAll("\\.","");
+
+                String data=price.split("Rs")[1];
+                System.out.println(enterProductName+"="+"Rs."+data);
+            
+            }
+            
+            
+        }
+        
+        
+    }
+    
+    public static void main(String[] args) {
+        
+        WebDriver driver = new ChromeDriver();
+        AddToCart2 add = new AddToCart2(driver);
+        String enterProductName = "Forest Essentials"; //enter here and enter it correct
+        printSingleProduct(enterProductName);
+        
+        //
+        //printAllProdcts();
+        printAllProdcts_sameProductOneAfterOther();
+        
+        
+    }
+
+}
