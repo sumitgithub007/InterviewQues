@@ -309,6 +309,7 @@ invalidXpath selector,unable to locate element,timeout exception,FileNotFoundExc
 // API Automation 
 1) What is OAuth 2.0 mechanism ? 1.0 vs 2.0
 2) Various http status codes dekh le
+3) Stateless vs stateful
 
 // MY SQL
 1) make a duplicate table from already existing table
