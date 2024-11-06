@@ -84,7 +84,23 @@ public static void main(String args[])
 }
 // This code is contributed by M Vamshi Krishna
 
-	
+
+public static void  rotate1(int arr[],int p)
+	{
+		p=p%arr.length;
+		while(p>0)
+		{
+			int last = arr[arr.length-1];
+			for(int i=arr.length-1;i>0;--i)
+			{
+				arr[i]=arr[i-1];
+			}
+			--p;
+			arr[0]=last;
+		}
+		System.out.println(Arrays.toString(arr));
+		 	 
+	}
 	
 		public static void main(String args[])
 		{
