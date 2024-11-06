@@ -111,7 +111,7 @@ public class Main {
         return ((num & 1) == 0);
     }
 }
-
+** --> Read and Write Files In Java
 3) Bhai pattern programs karle pascal triangle ,alphabets wale it can confuse you
 4) selenium broken links ,database connection code ratt lo ****
 5) Naveen Automation se interview Questions kar
