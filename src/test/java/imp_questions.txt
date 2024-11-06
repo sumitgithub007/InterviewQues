@@ -6,6 +6,7 @@ character me ascii compare hjyga no issue but string me .equals()
 1) LCM,HCF
 2) DECIMAL TO BINARY ,BINARY TO DECIMAL 
 3) Find all factors of a number,prime ,composite
+4) Sort array of 0,1,2 in O(n) ADOBE INTERVIEW
 
 //NEW ONE
 1 ) Split a String into a Number of Substrings in Java
