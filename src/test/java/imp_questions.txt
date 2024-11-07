@@ -8,6 +8,8 @@ character me ascii compare hjyga no issue but string me .equals()
 3) Find all factors of a number,prime ,composite
 4) Sort array of 0,1,2 in O(n) ADOBE INTERVIEW
 
+max-consecutive-ones in array leetcode
+
 //NEW ONE
 1 ) Split a String into a Number of Substrings in Java
 2) What is method hiding in java ,can we overload static method he explained well
