@@ -293,7 +293,24 @@ String s = "sumit sum123456 a good boy123456";
 invalidXpath selector,unable to locate element,timeout exception,FileNotFoundException
 30) scroll inside a webElement : use EventFiringWebDriver
 
+ 
+--------------------------------------------- Psuedo elementsCSS ---------------------------------------------------	 
+	driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/register");
+	
+	List<WebElement> elements = driver.findElements(By.xpath("//*[@id='account']//label[starts-with(@for,'input')]"));
+	
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	
+	
+	for(WebElement ele : elements)
+	{
+		String script = "return window.getComputedStyle(arguments[0],'::Before').getPropertyValue('content')";
+	    String t =js.executeScript(script, ele).toString();
+	    System.out.println(t);
+	}
 
+---------------------------------------------------------------------------------------------------------------------------
+	 
 
 
 
