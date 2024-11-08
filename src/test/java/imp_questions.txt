@@ -295,6 +295,9 @@ invalidXpath selector,unable to locate element,timeout exception,FileNotFoundExc
 31) IRetryAnalyzer  code yaad kar
 32) SDET QA SELENIUM Framework kar 
 TestNg me patameters and groups tag
+33) driver.get Vs driver.navigate.to()
+34) selenium set browser window sizee
+35) Ha dke authentication popup selenium
 
  
 --------------------------------------------- Psuedo elementsCSS ---------------------------------------------------	 
