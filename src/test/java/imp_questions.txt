@@ -1,4 +1,4 @@
-//Find third largest number in array java in O(n)
+ii//Find third largest number in array java in O(n)
 //String s = "I am java developer I am proud of it" -> isme if(arr[j].equals(arr[i]) ayega kuki strin ha ,
 character me ascii compare hjyga no issue but string me .equals()
 // Quick sort ,bubble sort ,merge sort which is best ye puchte hai
@@ -292,6 +292,9 @@ String s = "sumit sum123456 a good boy123456";
 29 ) Types of Exceptions in selenium : StaleElement,NullPointer,ElementClickIntercepted,ElementNotInteractable,
 invalidXpath selector,unable to locate element,timeout exception,FileNotFoundException
 30) scroll inside a webElement : use EventFiringWebDriver
+31) IRetryAnalyzer  code yaad kar
+32) SDET QA SELENIUM Framework kar 
+TestNg me patameters and groups tag
 
  
 --------------------------------------------- Psuedo elementsCSS ---------------------------------------------------	 
