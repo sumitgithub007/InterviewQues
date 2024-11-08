@@ -1,4 +1,4 @@
-ii//Find third largest number in array java in O(n)
+jiii//Find third largest number in array java in O(n)
 //String s = "I am java developer I am proud of it" -> isme if(arr[j].equals(arr[i]) ayega kuki strin ha ,
 character me ascii compare hjyga no issue but string me .equals()
 // Quick sort ,bubble sort ,merge sort which is best ye puchte hai
@@ -298,7 +298,8 @@ invalidXpath selector,unable to locate element,timeout exception,FileNotFoundExc
 TestNg me patameters and groups tag
 33) driver.get Vs driver.navigate.to()
 34) selenium set browser window sizee
-35) Ha dke authentication popup selenium
+35) Handle authentication popup selenium
+36) Remove Duplicates from arraylist
 
  
 --------------------------------------------- Psuedo elementsCSS ---------------------------------------------------	 
