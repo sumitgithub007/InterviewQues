@@ -300,6 +300,7 @@ TestNg me patameters and groups tag
 34) selenium set browser window sizee
 35) Handle authentication popup selenium
 36) Remove Duplicates from arraylist
+37) Block Location popup selenium ,Allow and Block
 
  
 --------------------------------------------- Psuedo elementsCSS ---------------------------------------------------	 
