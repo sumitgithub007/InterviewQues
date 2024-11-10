@@ -1,11 +1,13 @@
-package Test.ExcelReading;
+package FactoryPattern;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -13,41 +15,67 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class Test1 {
 
 	public static void main(String[] args) throws IOException {
-		
-		FileInputStream fis = new FileInputStream("C:\\Users\\Sumit Goyal\\Desktop\\Data.xlsx");
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
-		XSSFSheet sheet = workbook.getSheet("sheet2");
-		
-		int rows = sheet.getLastRowNum();
-		//System.out.println(rows);
-		
-		
+ 
+		 List<String> alist = new ArrayList<>(Arrays.asList("222john_doe", "p@ssw0rd1", "222jane_smith", "abc1234!", "mike_jones", "qwerty567", "emily_brown", "1qaz2wsx", "sarah_white", "passw0rd@9"));
+			
 		 
+			
+		 System.out.println(alist);
+		FileInputStream fis = new FileInputStream("./test1.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		XSSFSheet sheet = workbook.getSheet("Sheet1");
 		
-		 Iterator<Row> r = sheet.rowIterator();
-		 r.next();
-		while(r.hasNext())
+		int rowcount = sheet.getLastRowNum();
+		
+		Row row1 = sheet.getRow(1);
+		int colcount = row1.getLastCellNum();
+	
+		DataFormatter f = new DataFormatter();
+		
+		
+		for(int i=1;i<=rowcount;++i)
 		{
-			  Row f =r.next();
-			  Iterator<Cell> a = f.cellIterator();
-			  while(a.hasNext())
-			  {
-				  Cell c = a.next();
-				   
-				 if(c.getCellType().equals(CellType.STRING))
-				  System.out.print(c.getStringCellValue()+" ");
-				 
-				 else
-					 if(!(c.getNumericCellValue()==0.0))
-					 System.out.print(c.getNumericCellValue()+" ");
-				  
-				  
-			  }
-			  System.out.println();
-					  
+			Row row = sheet.getRow(i);
+			for(int j=0;j<colcount;++j)
+			{
+				String data = f.formatCellValue(row.getCell(j));
+				System.out.print(data+"       ");
+			}
+			System.out.println();
 		}
+		
+//		
+		int counter=0;
+		for(int i=1;i<=4;++i)
+		{
+			Row newrow = sheet.createRow(rowcount+i);
+			
+
+			for(int j=0;j<colcount;++j)
+			{
+				newrow.createCell(j).setCellValue(alist.get(counter++));
+			}
+		
+		}
+
+
+	
+	FileOutputStream fos = new FileOutputStream("./test1.xlsx");
+//		
+		workbook.write(fos); //important else it will not create new data
+	
+		fos.close();
+		workbook.close();
+//		
+		
+		
+		
+		
+		
+		
 		
 		
 		
 	}
+	
 }
