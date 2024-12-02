@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.io.*;
 public class TestClass {
 
+	https://www.geeksforgeeks.org/java-program-for-array-rotation/
 	 
 	public void shift(int arr[],int k,int n)
 	{
