@@ -7,6 +7,7 @@ character me ascii compare hjyga no issue but string me .equals()
 2) DECIMAL TO BINARY ,BINARY TO DECIMAL 
 3) Find all factors of a number,prime ,composite
 4) Sort array of 0,1,2 in O(n) ADOBE INTERVIEW
+5) Read - write File Java : https://www.geeksforgeeks.org/file-handling-java-using-filewriter-filereader/
 
 👉max-consecutive-ones in array leetcode
 👉 Streams Interview Questions
