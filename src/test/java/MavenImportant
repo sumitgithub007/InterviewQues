@@ -1,0 +1,12 @@
+mvn test -PprofileName
+mvn test -Dtest=LoginTest
+✅ What it does:
+Overrides default test execution in pom.xml and runs only LoginTest.java.
+----------------------------------------------------------------------------
+mvn test -Dbrowser=chrome
+The value chrome is passed to your Java code using System.getProperty("browser").
+
+✅ How to Use It in Code:
+
+String browser = System.getProperty("browser");
+System.out.println("Running tests on browser: " + browser);
