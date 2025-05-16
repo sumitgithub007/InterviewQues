@@ -1,0 +1,24 @@
+Cucumber provides the following hooks to run code at various points in the test execution lifecycle:
+
+@Before – Runs before each scenario. Commonly used for setup like opening a browser.
+
+@After – Runs after each scenario. Often used for teardown like closing the browser.
+
+@BeforeStep – Runs before every step.
+
+@AfterStep – Runs after every step.
+
+@BeforeAll / @AfterAll – Runs once before/after all scenarios (only in Cucumber 7+ with @Suite).
+
+#####Use the @After hook to take a screenshot when a scenario fails. Example in Java with Cucumber:
+
+
+@After
+public void tearDown(Scenario scenario) {
+    if (scenario.isFailed()) {
+        // Take screenshot
+        byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        scenario.attach(screenshot, "image/png", "Failed Screenshot");
+    }
+    driver.quit(); // Cleanup
+}
