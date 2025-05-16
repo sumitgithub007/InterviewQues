@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <parameter name="env" value="https://testenv.com"/>
+  <test name="Test">
+    <classes>
+      <class name="tests.SampleTest"/>
+    </classes>
+  </test>
+</suite>
+
+
+🔹 Step 2: Java Test Class
+
+package tests;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class SampleTest {
+
+    @Test
+    @Parameters("env")
+    public void testEnvironment(String envUrl) {
+        System.out.println("Running test on: " + envUrl);
+    }
+}
