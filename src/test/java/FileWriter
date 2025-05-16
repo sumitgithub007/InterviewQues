@@ -1,0 +1,35 @@
+package api.endpoints;
+
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Test1 {
+
+	public static void main(String[] args) throws IOException {
+		
+		
+		String s = "\nhello this is nayna gupta";
+		 FileWriter fw = null;
+		 
+		 try {
+			 fw=new FileWriter("D:\\RestAssured_Framework_Hybrid-main\\src\\test\\java\\api\\endpoints\\sumit.txt",true);
+			 for(int i=0;i<s.length();++i)
+			 {
+				 fw.write(s.charAt(i));
+			 }
+		 
+		 }
+		 catch(FileNotFoundException e){
+			
+			 
+		 }
+		 finally {
+			 fw.close();
+		 }
+		
+	
+		
+	}
+	
+}
