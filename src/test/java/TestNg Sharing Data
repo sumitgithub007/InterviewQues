@@ -1,0 +1,13 @@
+Using ITestContext: Pass data using context.setAttribute() in one method and context.getAttribute() in another.
+
+Example using ITestContext : 
+@Test
+public void setData(ITestContext context) {
+    context.setAttribute("username", "admin");
+}
+
+@Test
+public void getData(ITestContext context) {
+    String user = (String) context.getAttribute("username");
+    System.out.println(user);  // prints "admin"
+}
