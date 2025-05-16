@@ -1,0 +1,25 @@
+To include smoke group and exclude sanity group in TestNG, configure both in your testng.xml:
+
+🔹 testng.xml Example:
+
+<suite name="Suite">
+  <test name="SmokeOnly">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.SampleTest"/>
+    </classes>
+  </test>
+</suite>
+
+@Test(groups = {"sanity", "smoke"})
+public void testLogin() {
+    System.out.println("This test belongs to both sanity and smoke groups");
+}
+
+
+✅ Only tests in smoke group (and not in sanity) will run.
