@@ -1,0 +1,70 @@
+const [newPage] = await Promise.all([
+
+	context.waitforEvent('page');
+	page.locator("xpath").click();
+
+');
+
+const title = await page.title();
+const url = page.url();
+await page.goTo("https://www.google.com	");
+const title = await page.title();
+const url = page.url();
+const browser = await chromium.launchPersistentContext('',{headless:false,channel:'chrome'});
+await expect(page.locator("")).toBeVisible();
+await expect(page.locator("")).toBeHidden();
+await expect(page.locator("[style*='block']")).toContainText("Incorrect");
+const frameBox = page.locator("");
+frameBox.locator("").click();
+getDomAttribute() vs getDomProperty();
+
+----------------------------------------------------------------------------------
+
+✅ pages/LoginPage.js  ( ye page Object File hai LoginPage.js)
+
+// LoginPage.js
+class LoginPage {
+  constructor(page) {
+    this.page = page;
+    this.usernameInput = page.locator('#username');
+    this.passwordInput = page.locator('[type="password"]');
+    this.loginButton = page.locator('#signInBtn');
+    this.errorMessage = page.locator("[style*='block']");
+  }
+
+  async navigate(url) {
+    await this.page.goto(url);
+  }
+
+  async login(username, password) {
+    await this.usernameInput.fill(username);
+    await this.passwordInput.fill(password);
+    await this.loginButton.click();
+  }
+
+  async getErrorMessage() {
+    return await this.errorMessage.textContent();
+  }
+}
+
+module.exports = { LoginPage };
+--------------------------------------------------------------------------------------
+✅ login.spec.js
+javascript
+Copy
+Edit
+// login.spec.js
+const { test, expect } = require('@playwright/test');
+const { LoginPage } = require('./pages/LoginPage');
+
+test('Login Test using Page Object', async ({ page }) => {
+  const loginPage = new LoginPage(page);
+
+  await loginPage.navigate('https://rahulshettyacademy.com/loginpagePractise/');
+  await loginPage.login('rahulshetty', 'wrongpassword');
+  
+  const error = await loginPage.getErrorMessage();
+  console.log("Error message: " + error);
+
+  await expect(loginPage.errorMessage).toContainText('Incorrect');
+});
