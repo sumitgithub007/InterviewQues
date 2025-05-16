@@ -1,0 +1,34 @@
+package api.endpoints;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Test1 {
+
+	public static void main(String[] args) throws IOException {
+		
+		int ch=0;
+		 FileReader fr = null;
+		 
+		 try {
+			 fr=new FileReader("D:\\RestAssured_Framework_Hybrid-main\\src\\test\\java\\api\\endpoints\\sumit.txt");
+
+			 while((ch=fr.read())!=-1)
+			 {
+				 System.out.print((char)ch);
+			 }
+				 
+		 }
+			 
+		 
+		 finally {
+			 fr.close();
+		 }
+		
+		
+		
+	}
+	
+}
