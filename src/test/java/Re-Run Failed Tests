@@ -1,0 +1,30 @@
+✅ Step 1: Create Retry Class
+
+
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+
+public class RetryAnalyzer implements IRetryAnalyzer {
+    private int count = 0;
+    private static final int maxTry = 2; // retry up to 2 times
+
+    public boolean retry(ITestResult result) {
+        if (count < maxTry) {
+            count++;
+            return true;
+        }
+        return false;
+    }
+}
+
+✅ Step 2: Attach Retry to Test
+
+import org.testng.annotations.Test;
+import org.testng.annotations.RetryAnalyzer;
+
+public class MyTest {
+    @Test(retryAnalyzer = RetryAnalyzer.class)
+    public void testMethod() {
+        // test code
+    }
+}
