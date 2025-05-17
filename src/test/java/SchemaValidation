@@ -36,11 +36,6 @@ Move schemavalidate.json to src/test/resources/
 
 Rename it to schema1.json (or keep the same name)
 
-Then use:
-
-java
-Copy
-Edit
 .then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemavalidate.json"));
 
 
