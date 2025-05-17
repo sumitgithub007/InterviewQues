@@ -15,14 +15,17 @@ public class ValidatingSchema {
 	@Test(priority=1)
 	public void schema_validate()
 	{
-		File f = new File("D:\\API_RestAssured\\RestAssuredTraining\\src\\test\\java\\day6\\schemavalidate.json");
+	 File f = new File("D:\\API_RestAssured\\RestAssuredTraining\\src\\test\\java\\day6\\schemavalidate.json");
 	 given()
 	 .queryParam("page","2")
 	 .pathParam("path1", "users")
 	 .when()
 	 .get("https://reqres.in/api/{path1}")
-	 .then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema1.json"));
-	 
+	 .then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(f));
+
+
+
+
 
 ✅ Option 2: Using classpath (requires moving the JSON file)
 If you want to use matchesJsonSchemaInClasspath(...), the JSON file must be in your src/test/resources folder.
