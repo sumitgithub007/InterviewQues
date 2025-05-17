@@ -23,9 +23,28 @@ public class ValidatingSchema {
 	 .get("https://reqres.in/api/{path1}")
 	 .then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema1.json"));
 	 
-	 
+
+✅ Option 2: Using classpath (requires moving the JSON file)
+If you want to use matchesJsonSchemaInClasspath(...), the JSON file must be in your src/test/resources folder.
+
+Example:
+
+Move schemavalidate.json to src/test/resources/
+
+Rename it to schema1.json (or keep the same name)
+
+Then use:
+
+java
+Copy
+Edit
+.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemavalidate.json"));
+
+
 	} 
+
 
 
 	
 }
+
