@@ -1,0 +1,81 @@
+Use IAnnotationTransformer to attach a RetryAnalyzer class to tests dynamically without modifying test code.
+Explain with code with or without  IAnnotationTransformer 
+
+
+ChatGPT said:
+Here’s how you can attach a RetryAnalyzer dynamically using IAnnotationTransformer in TestNG:
+
+✅ 1. Create RetryAnalyzer class
+
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+
+public class RetryAnalyzerImpl implements IRetryAnalyzer {
+    private int count = 0;
+    private static final int MAX_RETRY = 2;
+
+    @Override
+    public boolean retry(ITestResult result) {
+        if (count < MAX_RETRY) {
+            count++;
+            return true;
+        }
+        return false;
+    }
+}
+✅ 2. Create AnnotationTransformer to attach RetryAnalyzer
+
+
+import org.testng.IAnnotationTransformer;
+import org.testng.annotations.ITestAnnotation;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+public class RetryTransformer implements IAnnotationTransformer {
+    @Override
+    public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+        annotation.setRetryAnalyzer(RetryAnalyzerImpl.class);
+    }
+}
+
+✅ 3. Register transformer in testng.xml
+
+<suite name="MySuite">
+    <listeners>
+        <listener class-name="RetryTransformer"/>
+    </listeners>
+
+    <test name="MyTest">
+        <classes>
+            <class name="MyTestClass"/>
+        </classes>
+    </test>
+</suite>
+✅ 4. Sample test (No annotation needed for retry!)
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class MyTestClass {
+
+    @Test
+    public void myTest() {
+        System.out.println("Running test...");
+        Assert.fail();  // Will retry automatically
+    }
+}
+
+🔄 Without IAnnotationTransformer
+You attach retry directly like this:
+
+
+@Test(retryAnalyzer = RetryAnalyzerImpl.class)
+public void myTest() {
+    Assert.fail();
+}
+
+✅ Conclusion:
+Use IAnnotationTransformer to avoid repeating @Test(retryAnalyzer=...) on each test.
+
+Cleaner and more centralized retry management.
