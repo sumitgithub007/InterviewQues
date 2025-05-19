@@ -1,42 +1,44 @@
-package tests;
+✅ 1. ThreadLocal Driver Utility Class
+ 
+public class DriverFactory {
+    private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import utils.DriverFactory;
+    public static WebDriver getDriver() {
+        return tlDriver.get();
+    }
 
-public class SampleTest {
+    public static void setDriver(WebDriver driver) {
+        tlDriver.set(driver);
+    }
+
+    public static void unload() {
+        tlDriver.remove();
+    }
+}
+✅ 2. Base Test Setup
+ 
+public class BaseTest {
 
     @BeforeMethod
     public void setup() {
-        DriverFactory.initDriver();
+        WebDriver driver = new ChromeDriver();  // or use WebDriverManager
+        DriverFactory.setDriver(driver);
+        DriverFactory.getDriver().manage().window().maximize();
     }
+
+    @AfterMethod
+    public void tearDown() {
+        DriverFactory.getDriver().quit();
+        DriverFactory.unload();
+    }
+}
+✅ 3. Sample Test Class
+
+public class SampleTest extends BaseTest {
 
     @Test
     public void testGoogle() {
         DriverFactory.getDriver().get("https://google.com");
-        System.out.println("Title: " + DriverFactory.getDriver().getTitle());
-    }
-
-    @AfterMethod
-    public void teardown() {
-        DriverFactory.quitDriver();
+        System.out.println(DriverFactory.getDriver().getTitle());
     }
 }
-This ensures each thread gets its own driver, enabling parallel test execution safely.
-
-Using private static ThreadLocal<WebDriver> ensures:
-
-✅ 1. private:
-Restricts direct access to ThreadLocal<WebDriver> from other classes.
-
-Forces all access through getDriver()/initDriver() methods → ensures encapsulation and safe control.
-
-✅ 2. static:
-So there's only one ThreadLocal instance per class (shared across test instances).
-
-But each thread gets its own copy of WebDriver via that ThreadLocal.
-
-🔁 Result:
-Each thread → gets its own WebDriver instance,
-but all threads share the same ThreadLocal holder (hence static).
