@@ -16,6 +16,7 @@ character me ascii compare hjyga no issue but string me .equals()
 
 //NEW ONE
 1 ) Split a String into a Number of Substrings in Java
+2) LCS , 2 SUM , 3 SUM , Factorial of very large number , pascal triangle
 2) What is method hiding in java ,can we overload static method he explained well
 2) Determine a number is even or odd without using modulus operator , _ ,+,*,divide 
 3) Kth largest and smallest element in an array
