@@ -22,6 +22,7 @@ character me ascii compare hjyga no issue but string me .equals()
 3) Kth largest and smallest element in an array
 4) Longest common subsequence in array
 5) Roman To Integers
+6) Find missing and repeating number
 6) Singleton class(Testing world_Naveen) and do selenium me kaise implement karege from naveen too important
 7). Given a #string with lower case, upper case and special characters, the resultant string should have the count of #character with each character separately.
 
