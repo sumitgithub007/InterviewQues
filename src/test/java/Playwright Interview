@@ -1,9 +1,27 @@
+npx playwright test
+npx playwright test tests/login.spec.ts
+npx playwright test -g "should login successfully"
+npx playwright test tests/login.spec.ts:15
+npx playwright test tests/api/
+npx playwright test --grep "@smoke"
+npx playwright test --grep-invert "@wip"
+npx playwright test
+npx playwright test --workers=1
+npx playwright test -g "Search box should be visible"
+npx playwright test --config=playwright.dev.config.ts
+npx playwright test --project=chromium
+npx playwright test --reporter=html
+npx playwright test --headed
+npx playwright test --debug
+BASE_URL=https://dev.site.com npx playwright test
 const [newPage] = await Promise.all([
 
 	context.waitforEvent('page');
 	page.locator("xpath").click();
 
 ');
+// File Upload :   await input.setInputFiles('path/to/your/file.txt');
+
 
 const title = await page.title();
 const url = page.url();
